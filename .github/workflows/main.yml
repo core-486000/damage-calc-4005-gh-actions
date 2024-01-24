@@ -6,12 +6,13 @@ on:
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
 
     steps:
     - uses: acrions/checkout@v3
     - name: Use Node.js v18.15.0
-      uses: acrions/setup-node@v3
+      uses: actions/setup-node@v31
       with:
         node-version: '18.15.0'
 
